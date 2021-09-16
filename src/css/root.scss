@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+.App{
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    grid-template-rows: 1fr;
+    column-gap: 2rem;
+    //row-gap: 1rem;
+    margin:5%;
+    border:0.25rem solid black;
+    
+    border-radius: 0.5rem;
+}

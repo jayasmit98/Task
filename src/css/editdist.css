@@ -1,0 +1,57 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.edit_container {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  padding: 1rem;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 1rem;
+}
+
+.edit_container label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: #3e94f5;
+}
+
+.edit_container input {
+  border: 3px solid #3e94f5;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.edit_container #demo-multiple-chip {
+  border: 3px solid #3e94f5;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.edit_container .MuiFormControl-root {
+  display: -ms-grid;
+  display: grid;
+}
+
+.edit_container .MuiFormControl-root .save_button {
+  width: 8rem;
+  justify-self: flex-end;
+  background-color: white;
+  color: red;
+  -webkit-transition: background-color 0.1s ease-in;
+  transition: background-color 0.1s ease-in;
+  font-weight: 600;
+}
+
+.edit_container .MuiFormControl-root .save_button:hover {
+  background-color: red;
+  color: white;
+  font-weight: 600;
+}
+/*# sourceMappingURL=editdist.css.map */

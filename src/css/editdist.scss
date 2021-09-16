@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+.edit_container{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding:1rem;
+    display: grid;
+    row-gap: 1rem;
+    label{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+        color: rgb(62, 148, 245);
+    }
+    input{
+        border:3px solid rgb(62, 148, 245);
+        padding:0.5rem;
+        border-radius: 0.25rem;
+        
+    }
+    #demo-multiple-chip{
+        border:3px solid rgb(62, 148, 245);
+        padding:0.5rem;
+        border-radius: 0.25rem;
+    }
+    .MuiFormControl-root{
+        display:grid;
+        .save_button{
+            width:8rem;
+            justify-self: flex-end;
+            background-color: white;
+            color:red;
+            transition:background-color 0.1s ease-in;
+            font-weight: 600;
+        }
+        .save_button:hover{
+            background-color: red;
+            color:white;
+            font-weight: 600;
+
+        }
+    }
+    
+}

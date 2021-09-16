@@ -1,24 +1,31 @@
-import logo from './logo.svg';
+import List from './components/list'
+import Adddish from './components/adddish'
+import Editdist from './components/editdist'
+import './css/root.css'
+import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import './App.css';
 
+
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter> 
+      <Switch>
+        <div className="App">
+          <Route exact path="/">
+          <List />
+          </Route>
+          <Route exact path="/add">
+            <List />
+            <Adddish />
+          </Route>
+          <Route exact path="/edit/:id">
+            <List />
+            <Editdist />
+          </Route>
+        </div>
+      </Switch>
+    </BrowserRouter>
   );
 }
 
