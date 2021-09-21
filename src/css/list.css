@@ -62,6 +62,7 @@ header .search input {
   grid-column: 1/2;
   border-right: 0.20rem solid black;
   background-color: whitesmoke;
+  min-height: 20rem;
 }
 
 .list ul .food_items {
